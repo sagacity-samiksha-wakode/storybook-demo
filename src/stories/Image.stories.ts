@@ -27,10 +27,12 @@ WithImageCaption.args = {
 
 export const WithZeroOpacity = Template.bind({});
 WithZeroOpacity.args = {
+  figCaptionTxt:  ' ' ,
     imgOpacity: 1
 };
 
 export const WithHalfOpacity = Template.bind({});
 WithHalfOpacity.args = {
+  figCaptionTxt:  ' ' ,
     imgOpacity: 0.5
 };

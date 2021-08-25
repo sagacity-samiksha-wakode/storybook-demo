@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ImageComponent implements OnInit {
   @Input()
-  imgSrc: string = '/assets/1.jpg'; //Make sure you add your image URL
+  imgSrc: string = 'https://www.mayfairhotels.com/img/home_banner/Mayfair_Waves.jpg'; //Make sure you add your image URL
 
   @Input()
   altTxt?: string = 'Pondicherry French Hotel';

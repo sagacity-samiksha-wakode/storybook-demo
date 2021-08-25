@@ -252,7 +252,7 @@
         },
         {
             "name": "ImageComponent",
-            "id": "component-ImageComponent-b763eadb4a9f7a3761b19a1cb4f11aff",
+            "id": "component-ImageComponent-04fa75c925ac519cc132957a2ab56a4c",
             "file": "src/app/image/image.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -295,7 +295,7 @@
                 },
                 {
                     "name": "imgSrc",
-                    "defaultValue": "'/assets/1.jpg'",
+                    "defaultValue": "'https://www.mayfairhotels.com/img/home_banner/Mayfair_Waves.jpg'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 10,
@@ -323,7 +323,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-image',\n  templateUrl: './image.component.html',\n  styleUrls: ['./image.component.css'],\n})\nexport class ImageComponent implements OnInit {\n  @Input()\n  imgSrc: string = '/assets/1.jpg'; //Make sure you add your image URL\n\n  @Input()\n  altTxt?: string = 'Pondicherry French Hotel';\n\n  @Input()\n  figCaptionTxt?: string =\n    'The French Quarter or White Town area in Pondicherry is filled with elegant colonial mansions in the midst of tree-lined boulevards, named on French streets beginning with \"rue\", numerous parks and charming cafés.';\n\n  @Input()\n  imgOpacity?: number = 1;\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-image',\n  templateUrl: './image.component.html',\n  styleUrls: ['./image.component.css'],\n})\nexport class ImageComponent implements OnInit {\n  @Input()\n  imgSrc: string = 'https://www.mayfairhotels.com/img/home_banner/Mayfair_Waves.jpg'; //Make sure you add your image URL\n\n  @Input()\n  altTxt?: string = 'Pondicherry French Hotel';\n\n  @Input()\n  figCaptionTxt?: string =\n    'The French Quarter or White Town area in Pondicherry is filled with elegant colonial mansions in the midst of tree-lined boulevards, named on French streets beginning with \"rue\", numerous parks and charming cafés.';\n\n  @Input()\n  imgOpacity?: number = 1;\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -483,21 +483,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "Large",
@@ -694,18 +694,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -716,6 +704,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
